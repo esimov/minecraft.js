@@ -49,3 +49,7 @@ simplex.init();
 simplex.noiseDetail(4, 2);
 ```
 The Perlin noise algorithm is included in the package.
+
+## License
+This experiment is under MIT License.
+
