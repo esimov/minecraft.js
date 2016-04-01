@@ -1,0 +1,60 @@
+<!-- @author Simo Endre (@simo_endre) -->
+
+<!DOCTYPE HTML>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html">
+    <meta name="description" content="Simplex Noise based Minecraft map generator">
+    <meta name="author" content="Simo Endre">
+    <meta name="keywords" content="noise, generative, perlin, simplexnoise, pattern, cellular, automata, art, javascript, experiments, canvas, html5, minecraft, notch"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <link rel="shortcut icon" type="image/x-icon" href="css/images/favicon.ico">    
+    <link href='css/style.css' rel='stylesheet' type='text/css'>
+
+    <title>Simplex Noise based Minecraft map generator</title>
+
+</head>
+
+<span id="arrow"></span>
+<header>
+    <h1>Simplex Noise based <br/> Minecraft map generator (v2) </h1>
+
+    <!-- Description about the experiment-->
+    <div class="description">
+        <section id="about">            
+            <p id accesskey="a" class="about">
+                <p>Further exploration of my earlier <a href="http://www.esimov.com/experiments/javascript/minecraft/">experiment</a> based on Notch <a href="http://jsfiddle.net/uzMPU/">Minecraft renderer </a> this time using simplex noise algorithm to generate random map. Using fake shadow and fog for generating atmospheric environment.</p>
+                <p>You can find the Javascript port of simplex noise algorithm here: <a target="_blank" href="https://github.com/esimov/simplexnoise.js">https://github.com/esimov/simplexnoise.js</a></p>
+            </p>  
+            <span class="first-line">Press and hold the mouse to explore or <br/></span>
+            <span class="second-line">play with values to generate new Minecraft maps.</span>          
+        </section>
+    </div>
+
+    <div id="gui"></div>
+</header> 
+
+<div class="wrapper">   
+    <div class="context"></div>    
+</div> 
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.5/dat.gui.min.js"></script>
+<script src="src/Noise.js"></script>
+<script src="src/SimplexNoise.js"></script>
+<script src="src/Minecraft.js"></script>
+<script src="libs/header.js"></script>
+<script src="libs/stats.js"></script>
+<script>
+    var stats = new Stats();
+    stats.getDomElement().style.position = 'absolute';
+    stats.getDomElement().style.left = parseInt(window.innerWidth) - 80 + 'px';
+    stats.getDomElement().style.top = 0 + 'px';
+    stats.getDomElement().style.display = 'none';
+    document.body.appendChild(stats.getDomElement());
+    setInterval(function() {
+        stats.update();
+    }, 1000/60);
+
+</script>
+</body>
+</html>

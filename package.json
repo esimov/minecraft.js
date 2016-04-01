@@ -1,0 +1,13 @@
+{
+  "name": "minecraft-map-generator",
+  "title": "Simplex Noise Based Minecraft Map generator",
+  "version": "0.0.1",
+  "keywords": [
+    "Simplex Noise",
+    "Minecraft",
+    "Canvas"
+  ],
+  "devDependencies": {
+    "node-static": "~0.7.7"
+  }
+}

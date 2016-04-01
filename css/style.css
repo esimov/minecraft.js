@@ -1,0 +1,234 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600);
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #111;
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*******************************
+*           HEADER             *
+********************************/
+
+header {
+    position: absolute;
+    background: rgba(14, 14, 14, 0.9);
+    z-index:9;
+    height: 100%;
+    width: 400px;
+    right: -440px;
+    padding: 0 20px;
+    overflow: hidden;
+    font-size: 16px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #333;  
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.80);
+    -moz-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.80);
+    -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.80);
+
+    -webkit-transition: all .20s ease-in-out;
+       -moz-transitoon: all .20s ease-in-out;
+         -o-transition: all .20s ease-in-out;
+            transition: all .20s ease-in-out;
+}
+
+header #gui {
+    position: relative;
+    clear: both;
+    margin-top: 14px;
+}
+
+header #perlin-map {
+    position: relative;
+    clear: both;
+    margin-top: 40px;
+    width: 128px;    
+}
+
+#arrow {
+    position: absolute;
+    right: 10px; top: 0;
+    float: left;    
+    font-size: 50px;
+    font-weight: 200;
+    color: #adff2f;
+    z-index: 99;    
+    cursor: pointer;   
+    -webkit-transition: all 0.9s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    -moz-transition: all 0.9s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    -o-transition: all 0.9s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    -ms-transition: all 0.9s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    transition: all 0.9s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    -webkit-transform:rotate(0deg);
+    -moz-transform:rotate(0deg);
+    -o-transform:rotate(0deg);
+    -ms-transform:rotate(0deg);
+    transform: rotate(0deg);
+    
+}
+
+#arrow.animate {
+    -webkit-transition: all 0.9s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    -moz-transition: all 0.9s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    -o-transition: all 0.9s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    -ms-transition: all 0.9s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    transition: all 0.9s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    -webkit-transform:rotate(135deg);
+    -moz-transform:rotate(135deg);
+    -o-transform:rotate(135deg);
+    -ms-transform:rotate(135deg);
+    transform: rotate(135deg);
+}
+
+
+#arrow:before {
+    content: "\2b";
+}
+
+.header-open #label {
+    color: #fff;
+}
+
+header #wrap {
+    position: absolute;
+    width: 100%; height: 100%;
+    opacity: 0.4;    
+    z-index: -10;
+}
+
+header h1 {
+    cursor: default;
+    font-weight: 200;
+    font-size: 20px;
+    width: 100%;
+    float: left;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+/*******************************
+* Header description
+********************************/
+
+header .description {
+    text-align: justify;
+    color: #dcdcdc;
+    font-size: 13px;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+}
+
+span[article] {
+    font-style: italic;
+}
+
+header h2 {
+    text-transform: uppercase;
+    font-size: 10pt;
+    margin-top: 14px;
+    margin-left: 20px;
+    color: #fff;
+}
+
+header .first-line { 
+    margin: 0 auto;    
+    text-align: center;
+    color: #dcdcdc;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+header .first-line:before {
+    content: url('images/rotate.png');
+    position: relative;
+    opacity: 1;
+    left:0;
+    top: 14px;    
+    margin-right: 8px;
+}
+
+header .second-line {
+    padding-left: 42px;
+}
+
+/*******************************
+* Header animation
+********************************/
+
+header.animate {
+    right: 0;
+}
+
+header.animate .horizontal-line {
+    margin-right: -40px;
+    opacity: 1;
+}
+
+header.animate .header-open {
+    opacity: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #adff2f;
+}
+
+/*******************************
+* Main display
+********************************/
+
+div#main {
+    position:relative!important; display: block!important; width: 900px!important; height: 600px!important;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #222;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+
+    -webkit-box-shadow: 0px 2px 17px rgba(0,0,0,.80), inset 0 0 15px 15px rgba(5,5,5,.2);
+       -moz-box-shadow: 0px 2px 17px rgba(0,0,0,.80), inset 0 0 15px 15px rgba(5,5,5,.2);
+            box-shadow: 0px 2px 17px rgba(0,0,0,.80), inset 0 0 15px 15px rgba(5,5,5,.2);
+}
+
+div.context {
+    position: absolute;
+    width: 896px; height: 620px;
+    left: 50%; margin-left: -448px;    
+    top: 50%; margin-top: -310px;
+    border: 1px solid #222;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+
+    -webkit-box-shadow: 0px 2px 17px rgba(0,0,0,.80), inset 0 0 15px 15px rgba(5,5,5,.2);
+       -moz-box-shadow: 0px 2px 17px rgba(0,0,0,.80), inset 0 0 15px 15px rgba(5,5,5,.2);
+            box-shadow: 0px 2px 17px rgba(0,0,0,.80), inset 0 0 15px 15px rgba(5,5,5,.2);
+}
+
+.context #canvas {
+    position: relative;    
+    left: 10px;
+    top: 10px;
+}
+
+.no-canvas {
+    color: #999999;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 150px;
+}
