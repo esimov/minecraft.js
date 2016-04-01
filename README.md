@@ -52,5 +52,8 @@ simplex.noiseDetail(4, 2);
 ```
 The Perlin noise algorithm is included in the package.
 
+# Running example
+www.esimov.com/experiments/javascript/minecraft_v2/
+
 ## License
 This experiment is under MIT License.
