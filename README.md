@@ -1,6 +1,6 @@
 # minecraft.js
 
-This is an experiment adapted from Notch minecraft <a href="http://jsfiddle.net/uzmpu/">renderer</a>, but extended to be used for random terrain generation. As a fundation it's using the simplex noise random seed distribution algorithm. For the Javascript port of simplex noise algorithm check <a href="https://github.com/esimov/minecraft.js">simplexnoise.js</a>.
+This is an experiment adapted from Notch minecraft <a href="http://jsfiddle.net/uzmpu/">renderer</a>, but extended to be used for random terrain generation. As a fundation it's using the simplex noise random seed distribution algorithm. For the Javascript port of simplex noise algorithm check <a href="https://github.com/esimov/simplexnoise.js">simplexnoise.js</a>.
 
 ![Screenshot](https://raw.githubusercontent.com/esimov/minecraft.js/master/assets/screenshot.png)
 
