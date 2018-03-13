@@ -30,7 +30,7 @@ simplex.noiseDetail(4, 2);
 
 var canvas = document.createElement('canvas');
 canvas.setAttribute('width', '520');
-canvas.setAttribute('height', '300');
+canvas.setAttribute('height', '320');
 canvas.setAttribute('id', 'canvas');
 var canvasWidth = canvas.width = canvas.getAttribute('width');
 var canvasHeight = canvas.height = canvas.getAttribute('height');

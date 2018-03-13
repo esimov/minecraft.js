@@ -205,7 +205,7 @@ div#main {
 
 div.context {
     position: absolute;
-    width: 1024px; height: 720px;
+    width: 1024px; height: 640px;
     left: 50%; 
     top: 50%;    
     transform: translate(-50%, -50%);
