@@ -142,8 +142,8 @@ canvas.addEventListener('mouseup', function(event) {
 // Mobile devices touch events
 canvas.addEventListener('touchstart', function(event) {    
     event.preventDefault();    
-    lastX = event.changedTouches[0].pageX - (getScrollX() + canvas.getBoundingClientRect().left);
-    lastY = event.changedTouches[0].pageY - (getScrollY() + canvas.getBoundingClientRect().top);            
+    cx = event.changedTouches[0].pageX - (getScrollX() + canvas.getBoundingClientRect().left) - lastX;
+    cy = event.changedTouches[0].pageY - (getScrollY() + canvas.getBoundingClientRect().top) - lastY;            
     mouseDown = true;      
 });
 
@@ -168,8 +168,8 @@ function onMouseMove(e) {
 function onTouchMove(e) {
     if (getTouchPos(e).y <= 40) return;    
     if (mouseDown) {                        
-        valx = getMousePos(e).x * 0.01; 
-        valy = getMousePos(e).y * 0.02;     
+        valx = getTouchPos(e).x * 0.01; 
+        valy = getTouchPos(e).y * 0.02;          
     } else {
         if (dx == undefined) return;        
     }
