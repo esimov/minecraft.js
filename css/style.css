@@ -205,9 +205,10 @@ div#main {
 
 div.context {
     position: absolute;
-    width: 896px; height: 620px;
-    left: 50%; margin-left: -448px;    
-    top: 50%; margin-top: -310px;
+    width: 1024px; height: 720px;
+    left: 50%; 
+    top: 50%;    
+    transform: translate(-50%, -50%);
     border: 1px solid #222;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -221,7 +222,8 @@ div.context {
 }
 
 .context #canvas {
-    position: relative;    
+    position: relative;   
+    cursor: move; 
     left: 10px;
     top: 10px;
 }

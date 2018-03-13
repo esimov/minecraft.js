@@ -29,8 +29,8 @@ simplex.init();
 simplex.noiseDetail(4, 2);
 
 var canvas = document.createElement('canvas');
-canvas.setAttribute('width', '384');
-canvas.setAttribute('height', '256');
+canvas.setAttribute('width', '520');
+canvas.setAttribute('height', '300');
 canvas.setAttribute('id', 'canvas');
 var canvasWidth = canvas.width = canvas.getAttribute('width');
 var canvasHeight = canvas.height = canvas.getAttribute('height');
@@ -155,24 +155,33 @@ canvas.addEventListener('touchend', function(event) {
 });
 
 function onMouseMove(e) {
-    if (getMousePos(e).y <= 40) return;  
+    if (getMousePos(e).y <= 40) return;
+
     if (mouseDown) {                        
         valx = getMousePos(e).x * 0.01; 
-        valy = getMousePos(e).y * 0.02;
-        
+        valy = getMousePos(e).y * 0.02;        
     } else {
         if (dx == undefined) return;        
-    }       
+    }    
+
+    document.documentElement.addEventListener('mouseup', function(e){
+        mouseDown = false;        
+    });
 }
 
 function onTouchMove(e) {
-    if (getTouchPos(e).y <= 40) return;    
+    if (getTouchPos(e).y <= 40) return;
+
     if (mouseDown) {                        
         valx = getTouchPos(e).x * 0.01; 
         valy = getTouchPos(e).y * 0.02;          
     } else {
         if (dx == undefined) return;        
     }
+
+    document.documentElement.addEventListener('touchend', function(e){
+        mouseDown = false;        
+    });
 }
 
 function initTexMap() {
@@ -508,7 +517,6 @@ function init() {
 init();
 render();
 initTexMap();
-//initMap();
 
 function render() {
     var id = requestAnimationFrame(render);    
