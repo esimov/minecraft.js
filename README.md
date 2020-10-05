@@ -4,6 +4,8 @@ This is an experiment adapted from Notch minecraft <a href="http://jsfiddle.net/
 
 ![Screenshot](https://raw.githubusercontent.com/esimov/minecraft.js/master/assets/screenshot.png)
 
+#### [Live demo](https://www.esimov.com/experiments/javascript/minecraft_v2/)
+
 ### Features
 - Highly adaptive
 - Customizable
