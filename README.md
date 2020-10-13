@@ -1,6 +1,8 @@
 # minecraft.js
 
-This is an experiment adapted from Notch minecraft <a href="http://jsfiddle.net/uzmpu/">renderer</a>, but extended to be used for random terrain generation. As a fundation it's using the simplex noise random seed distribution algorithm. For the Javascript port of simplex noise algorithm check <a href="https://github.com/esimov/simplexnoise.js">simplexnoise.js</a>.
+This is an experiment adapted from Notch's Javascript Minecraft <a href="http://jsfiddle.net/2yr59/23/">renderer</a>, but extended with new aditions, like random terrain generation, fog and fake shadows, possibility to navigate and look over the generated landmark. 
+
+As a fundation is using the simplex noise random seed distribution algorithm. For the Javascript port of simplex noise algorithm check <a href="https://github.com/esimov/simplexnoise.js">simplexnoise.js</a>.
 
 ![Screenshot](https://raw.githubusercontent.com/esimov/minecraft.js/master/assets/screenshot.png)
 
@@ -57,5 +59,12 @@ The Perlin noise algorithm is included in the package.
 Running example:
 www.esimov.com/experiments/javascript/minecraft_v2/
 
+## Author
+
+* Endre Simo ([@simo_endre](https://twitter.com/simo_endre))
+
 ## License
-This experiment is under MIT License.
+
+Copyright © 2016 Endre Simo
+
+This software is distributed under the MIT license. See the [LICENSE](https://github.com/esimov/pigo/blob/master/LICENSE) file for the full license text.
